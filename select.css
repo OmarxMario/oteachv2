@@ -10,6 +10,8 @@ a{
     display: flex;
     color: #fff;
     background: linear-gradient(45deg,rgb(95,84,235), rgb(25,111,40)) ;
+    background-repeat: no-repeat;
+    background-size: cover;
 
     width: 150px;
     align-items: center;
@@ -36,6 +38,8 @@ body{
         width: 100vw;
         min-height: 100vh;
         background: linear-gradient(46deg,#26618a,#02491c);
+        background-repeat: no-repeat;
+        background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
