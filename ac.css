@@ -4,7 +4,10 @@
     body{
         width: 100vw;
         height: 100vh;
-        background: #000000;
+        background: url(img/Smoke\ Colors\ GIF\ by\ Douglas\ Schatz.gif) no-repeat;
+        background-position: center;
+        background-size: cover;
+    
         display: flex;
         justify-content: center;
         align-items: center;
@@ -20,7 +23,8 @@
         flex-direction: column;
         border-radius: 8px;
         color: #fff;
-        background-color: #111111;
+        background-color: #11111189;
+        backdrop-filter: blur(40px);
         transition: 0.7s ease; 
         cursor: pointer;
     }
@@ -30,12 +34,34 @@
     h1{
         margin-top: 20px;margin-bottom: 20px;
     }
+    .s-m{
+        background-color: rgba(0, 0, 0, 0.321);
+        padding: 10px 20px;
+        border-radius: 8px;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        -ms-border-radius: 8px;
+        -o-border-radius: 8px;
+}
     .s-m a{
         margin: 20px;
         color: #fff;
-        font-size: 25px;
+        font-size: 35px;
         transition: 0.7s ease;
+        
     }
     a:hover{
-        color: #535353;
+        background: linear-gradient(45deg,#14f0e5,#c402ff);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    @media (max-width:1024px){
+        .card:hover{
+            transform: scale(1);
+            -webkit-transform: scale(1);
+            -moz-transform: scale(1);
+            -ms-transform: scale(1);
+            -o-transform: scale(1);
+}
     }

@@ -7,11 +7,16 @@
     <title style="font-family: ui;">Oteach</title>
     <link rel="shortcut icon" href="img/Screenshot 2025-01-17 111017.png" type="image/x-icon" style="border-radius: 2px;">
     <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            overflow: hidden;
+        }
+    </style>
 </head>
 <body>
-    <div class="m" id="1">
+    <div class="mx" id="1">
         <header>
-            <a href="#" class="logo" onclick="document.querySelector('iframe').src='main.html'">Oteach</a>
+            <a href="#" class="logo" onclick="document.querySelector('iframe').src='main.html#main'">Oteach</a>
             <button id="menu-btn" onclick="openx();" style="cursor: pointer;"><i class="fa-solid fa-bars"></i></button>
             
         </header>
@@ -26,6 +31,7 @@
             <a href="#" onclick="link('contact.html');"><i class="fa-solid fa-phone"></i> تواصل</a>
             <a href="#" onclick="link('rab.html')"><i class="fa-solid fa-bug"></i> تبليغ عن خطأ</a>
             <a href="#" onclick="linkx(`https://moro933978.github.io/programming-home99/`)"><i class="fa-solid fa-code"></i> تعلم برمجة مع مستر كوفي مكس</a>
+            <a href="#" onclick="link('comm.html')"><i class="fa-regular fa-comment"></i> تعليقات</a>
         </div>
         
     </div>
@@ -45,7 +51,7 @@
         }
         function linkx(l){
             window.open(l);
-            
+            window.close();
         }
 
 
