@@ -1,0 +1,97 @@
+/* Reset default margin and padding for all elements, ensuring consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures padding and border are included in element's width/height */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+:root{
+    --priamry-color: #d8e5f7;
+    --transparnt-color: #00000064;
+    --secondry-color:#0c4a76;
+    --pragaph-number-color:#345770;
+    --btn-color:#fff;
+}
+/* Ensure body takes up at least the full height of the viewport */
+body {
+    background: var(--priamry-color);
+    background-attachment: fixed;
+    min-height: 100vh;
+    width: 100%; /* Ensure full width for body */
+    display: flex;
+    flex-direction: column; /* Allow for more flexible layout adjustments */
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+
+
+
+
+h1 {
+    margin-top: 80px;
+    margin: 10px;
+    position: relative;
+    display: block;
+    text-align: center;
+    color: var(--secondry-color);
+}
+
+h1::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: var(--secondry-color);
+    left: 0;
+    bottom: -5px;
+}
+iframe{
+    box-shadow: #00000071 8px 8px 8px;
+    margin: 30px;
+    border-radius: 8px;
+    transition: 0.5s all;
+    /*width="300" height="200"*/
+    width: 300px;
+    height: 200px;
+
+}
+iframe:hover{
+    transform: scale(1.1);
+    transform: rotateZ(-5deg);
+    box-shadow: #00000071 16px 16px 16px;
+    -webkit-transform: rotateZ(-5deg);
+    -moz-transform: rotateZ(-5deg);
+    -ms-transform: rotateZ(-5deg);
+    -o-transform: rotateZ(-5deg);
+}
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #000000;
+  }
+  @media (max-width:336px){
+    iframe{
+        transform: scale(0.7);
+        -webkit-transform: scale(0.7);
+        -moz-transform: scale(0.7);
+        -ms-transform: scale(0.7);
+        -o-transform: scale(0.7);
+        margin: 5px;
+}
+}

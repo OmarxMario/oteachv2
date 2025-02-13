@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oteach</title>
+    <link rel="shortcut icon" href="img/Screenshot 2025-01-17 111017.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="mx" id="1">
+        <header>
+            <div class="con" style="flex-direction: row-reverse;">
+                <a href="#" class="logo" onclick="link('main.html#main')"  style="color :var(--btn-color);">
+                    Oteach
+                </a>
+
+                
+                
+                <button id="menu-btn" type="button" onclick="openx()" >
+                    <i class="fa-solid fa-bars" style="cursor: pointer;"></i>
+                </button>
+            </div>
+        </header>
+        <iframe src="main.html" frameborder="0" id="main-frame" ></iframe>
+    </div>
+
+
+
+    <div class="d"  style="display: none;" id="2">
+        <header>
+            <button type="button" onclick="exitx()" >
+                <i class="fa-solid fa-x" style="cursor: pointer;"></i>
+            </button>
+        </header>
+        <div class="contntet">
+            <a href="#" onclick="changePage('english.html')"><i class="fa-solid fa-book"></i> انجليزي</a>
+            <a href="#" onclick="changePage('arabic.html')"><i class="fa-solid fa-book"></i> عربي</a>
+            <a href="#" onclick="openExternal('https://omarxmario.github.io/pro/')"><i class="fa-solid fa-address-card"></i> معلومات عامة عني</a>
+            <a href="#" onclick="changePage('contact.html')"><i class="fa-solid fa-phone"></i> تواصل</a>
+            <a href="#" onclick="changePage('rab.html')"><i class="fa-solid fa-bug"></i> تبليغ عن خطأ</a>
+            <a href="#" onclick="openExternal('https://moro933978.github.io/programming-home99/')"><i class="fa-solid fa-code"></i> تعلم برمجة</a>
+            <a href="#" onclick="changePage('comm.html')"><i class="fa-regular fa-comment"></i> تعليقات</a>
+        </div>
+    </div>
+
+    <script>
+
+function openx(){
+            document.getElementById('1').style.display='none';
+            document.getElementById('2').style.display='flex';
+        }
+        function exitx(){
+            document.getElementById('1').style.display='flex';
+            document.getElementById('2').style.display='none';
+
+        }
+        function link(l){
+            exitx();
+            document.querySelector('iframe').src=l;
+        }
+        function linkx(l){
+            window.open(l);
+            window.close();
+        }
+    </script>
+</body>
+</html>
