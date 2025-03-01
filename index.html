@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oteach</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-straight/css/uicons-regular-straight.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/cv.png" type="image/x-icon">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-straight/css/uicons-solid-straight.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-straight/css/uicons-regular-straight.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-bold-straight/css/uicons-bold-straight.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+    <link rel="stylesheet" href="style.css">
+
+
+
+
+
+
+
+
+    <style>
+        body{
+            overflow: hidden;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div class="mx" id="1">
+        <header>
+            <div class="con" style="flex-direction: row-reverse;">
+                <a href="#" class="logo" onclick="link('main.html#main')"  style="color :var(--btn-color);">
+                    Oteach
+                </a>
+
+                
+                
+                <button id="menu-btn" type="button" onclick="openx()" >
+                    <i class="fi fi-br-menu-burger"></i>
+                </button>
+            </div>
+        </header>
+        <iframe src="main.html" frameborder="0" id="main-frame"></iframe>
+    </div>
+
+
+
+    <div class="d"  style="display: none;" id="2">
+        <header>
+            <div class="con" style="flex-direction: row-reverse;">
+                <a href="#" class="logo" onclick="link('main.html#main')"  style="color :var(--btn-color);">
+                    Oteach
+                </a>
+
+                
+                
+                <button id="menu-btn" type="button" onclick="exitx()" >
+                    <i class="fi fi-br-exit"></i>
+                </button>
+            </div>
+        </header>
+        <div class="contntet">
+            <a href="#" onclick="link('english.html')"><i class="fi fi-br-book-alt"></i> English</a>
+            <a href="#" onclick="link('arbic.html')"><i class="fi fi-br-book-alt"></i> Arabic</a>
+            <a href="#" onclick="linkx('https://omarxmario.github.io/pro/')"><i class="fi fi-rr-address-book"></i> My Protfolio</a>
+            <a href="#" onclick="link('contact.html')"><i class="fi fi-br-phone-call"></i> Contact</a>
+            <a href="#" onclick="link('rab.html')"><i class="fi fi-rs-bug"></i> Report a bug</a>
+            <a href="#" onclick="linkx('https://moro933978.github.io/programming-home99/')"><i class="fi fi-br-code-simple"></i> Learn programming with coffemix</a>
+            <a href="#" onclick="link('comm.html')"><i class="fi fi-ss-comments"></i> comments</a>
+            
+        </div>
+    </div>
+
+    <script>
+
+function openx(){
+            document.getElementById('1').style.display='none';
+            document.getElementById('2').style.display='flex';
+        }
+        function exitx(){
+            document.getElementById('1').style.display='flex';
+            document.getElementById('2').style.display='none';
+
+        }
+        function link(l){
+            exitx();
+            document.querySelector('iframe').src=l;
+        }
+        function linkx(l){
+            window.open(l);
+            window.close();
+        }
+    </script>
+</body>
+</html>
+    
